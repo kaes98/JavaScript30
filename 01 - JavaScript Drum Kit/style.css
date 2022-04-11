@@ -1,6 +1,6 @@
 html {
   font-size: 10px;
-  background: url('./background.jpg') bottom center;
+  background: url('./fuji.jpg') bottom center;
   background-size: cover;
 }
 
@@ -10,32 +10,49 @@ body,html {
   font-family: sans-serif;
 }
 
-.keys {
+.allkeys {
   display: flex;
   flex: 1;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
+  /* position: relative; */
+  /* top: 500px; */
+
 }
+
+
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 20vh;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 20px;
+
+}
+
+
 
 .key {
   border: .4rem solid black;
-  border-radius: .5rem;
+  border-radius: 2rem;
   margin: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   padding: 1rem .5rem;
-  transition: all .07s ease;
+  transition: all .1s ease;
   width: 10rem;
   text-align: center;
   color: white;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.5);
   text-shadow: 0 0 .5rem black;
 }
 
 .playing {
   transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  border-color: #ec7dab;
+  box-shadow: 0 0 1rem #ec7dab;
 }
 
 kbd {
@@ -44,8 +61,10 @@ kbd {
 }
 
 .sound {
-  font-size: 1.2rem;
-  text-transform: uppercase;
+  font-size: 1.8rem;
+  text-transform: lowercase;
   letter-spacing: .1rem;
-  color: #ffc600;
+  color: #ec7dab;
 }
+
+
